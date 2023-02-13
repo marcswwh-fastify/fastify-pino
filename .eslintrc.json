@@ -1,0 +1,49 @@
+{
+    "env": {
+        "node": true,
+        "commonjs": true,
+		"jest": true,
+		"es6": true
+    },
+	"plugins": ["jest"],
+    "extends": [
+		"eslint:recommended",
+		"plugin:jest/recommended",
+		"plugin:jest-formatting/recommended"
+	],
+    "parserOptions": {
+        "ecmaVersion": 13
+    },
+    "rules": {
+        "indent": ["error", "tab", { "SwitchCase": 1 }],
+        "linebreak-style": ["error", "windows"],
+        "quotes": ["error", "single"],
+        "semi": ["error", "never"],
+        "strict": ["error", "global"],
+        "prefer-const": "error",
+        "no-var": "error",
+		"no-unused-vars": ["warn",{ "argsIgnorePattern": "^_" }],
+        "no-useless-constructor": "error",
+        "max-classes-per-file": ["error", 1],
+        "no-alert": "error",
+        "no-console": ["error", { "allow": ["debug", "error"] }],
+        "no-debugger": "error",
+		"array-bracket-spacing": ["error", "always", { "singleValue": false }],
+		"block-spacing": "error",
+		"brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+		"camelcase": "error",
+		"comma-style": ["error", "last"],
+		"comma-spacing": ["error", { "before": false, "after": true }],
+		"comma-dangle": ["error", "never"],
+		"eol-last": ["error", "never"],
+		"func-call-spacing": ["error", "never"],
+		"func-style": ["error", "expression"],
+		"id-denylist": ["error", "data", "callback"],
+		"id-length": ["error", { "min": 2 }],
+		"max-depth": ["error", 4],
+		"max-lines": ["error", {"max": 300, "skipBlankLines": true, "skipComments": true}],
+		"max-statements": ["error", 300],
+		"no-multiple-empty-lines": "error",
+		"jest/no-mocks-import": "off"
+    }
+}

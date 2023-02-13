@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es2017",
+        "moduleResolution": "node",
+        "experimentalDecorators": false,
+        "checkJs": false,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "esModuleInterop": true,
+        "noImplicitAny": false
+    },
+    "exclude": ["node_modules", "dist"]
+}
